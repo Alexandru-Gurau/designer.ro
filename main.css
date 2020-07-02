@@ -1981,6 +1981,10 @@ a.drinks__btn:active {
   font-size: 3.5rem;
 }
 
+.foodWelcome__foodHeader p {
+  color: #383737;
+}
+
 .foodItalian {
   height: 90vh;
   display: flex;
