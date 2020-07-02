@@ -3879,9 +3879,21 @@ a.drinks__btn:active {
   justify-content: center;
 }
 
+@media only screen and (max-width: 75em) {
+  .drinks {
+    flex-direction: row;
+  }
+}
+
 @media only screen and (max-width: 52.25em) {
   .drinks {
     justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .drinks {
+    flex-direction: column;
   }
 }
 
@@ -3904,7 +3916,7 @@ a.drinks__btn:active {
 
 .drinks__picture {
   height: 20rem;
-  width: 20rem;
+  width: 15rem;
   display: flex;
   justify-content: center;
 }
