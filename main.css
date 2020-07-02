@@ -2408,9 +2408,15 @@ a.drinks__btn:active {
   flex-direction: column;
 }
 
+@media only screen and (max-width: 52.25em) {
+  .dessertNavigation {
+    height: 55vh;
+  }
+}
+
 @media only screen and (max-width: 37.5em) {
   .dessertNavigation {
-    height: 60vh;
+    height: 50vh;
   }
 }
 
