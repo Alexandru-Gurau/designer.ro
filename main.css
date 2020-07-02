@@ -1978,49 +1978,7 @@ a.drinks__btn:active {
   align-items: flex-start;
   color: #27ae60;
   font-family: "Dancing Script", cursive;
-}
-
-.foodWelcome__foodHeader h1 {
-  font-size: 12rem;
-}
-
-@media only screen and (max-width: 52.25em) {
-  .foodWelcome__foodHeader h1 {
-    font-size: 8rem;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  .foodWelcome__foodHeader h1 {
-    font-size: 4rem;
-  }
-}
-
-.foodWelcome__foodHeader h3 {
-  font-size: 5rem;
-}
-
-@media only screen and (max-width: 52.25em) {
-  .foodWelcome__foodHeader h3 {
-    font-size: 4.5rem;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  .foodWelcome__foodHeader h3 {
-    font-size: 3rem;
-  }
-}
-
-.foodWelcome__foodHeader p {
-  color: #383737;
-  font-size: 4rem;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .foodWelcome__foodHeader p {
-    font-size: 2.5rem;
-  }
+  font-size: 3.5rem;
 }
 
 .foodItalian {
