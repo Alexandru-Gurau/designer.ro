@@ -1986,7 +1986,8 @@ a.drinks__btn:active {
 
 @media only screen and (max-width: 52.25em) {
   .foodWelcome__foodHeader h1 {
-    font-size: 8rem;
+    font-size: 4rem;
+    color: #D98B3A;
   }
 }
 
