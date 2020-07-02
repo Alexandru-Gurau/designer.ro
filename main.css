@@ -3899,7 +3899,7 @@ a.drinks__btn:active {
 
 .drinks__box {
   height: 45rem;
-  min-width: 30%;
+  min-width: 25%;
   margin: 3rem;
   display: flex;
   flex-direction: column;
