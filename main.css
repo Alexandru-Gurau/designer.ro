@@ -1922,16 +1922,16 @@ a.drinks__btn:active {
   flex-direction: column;
 }
 
-@media only screen and (max-width: 75em) {
-  .foodWelcome {
-    height: 80vh;
-  }
-}
-
 @media only screen and (max-width: 52.25em) {
   .foodWelcome {
     height: 80vh;
     align-content: center;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .foodWelcome {
+    height: 40vh;
   }
 }
 
@@ -1992,7 +1992,7 @@ a.drinks__btn:active {
 
 @media only screen and (max-width: 37.5em) {
   .foodWelcome__foodHeader h1 {
-    font-size: 6rem;
+    font-size: 3rem;
   }
 }
 
@@ -2008,7 +2008,7 @@ a.drinks__btn:active {
 
 @media only screen and (max-width: 37.5em) {
   .foodWelcome__foodHeader h3 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 
@@ -2019,7 +2019,7 @@ a.drinks__btn:active {
 
 @media only screen and (max-width: 37.5em) {
   .foodWelcome__foodHeader p {
-    font-size: 3rem;
+    font-size: 1.6rem;
   }
 }
 
