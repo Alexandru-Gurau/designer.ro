@@ -3888,7 +3888,7 @@ a.drinks__btn:active {
 .drinks__box {
   height: 45rem;
   min-width: 30%;
-  margin: 2rem;
+  margin: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3904,7 +3904,7 @@ a.drinks__btn:active {
 
 .drinks__picture {
   height: 20rem;
-  width: 15rem;
+  width: 20rem;
   display: flex;
   justify-content: center;
 }
