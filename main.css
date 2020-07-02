@@ -1,0 +1,4200 @@
+/*0     -  600px:   Phone
+600px   -  900px:   Tablet portret
+900px   -  1200px:  Tablet landscape
+1200px  -  1800px:  Is where normal styles apply
+1800px  +        :  Big desktop
+*/
+.animate__animated.animate__backInRight {
+  --animate-duration: 1.5s;
+}
+
+.animate__animated.animate__backInUp {
+  --animate-duration: 1.5s;
+}
+
+.animate__animated.animate__backInDown {
+  --animate-duration: 1.5s;
+}
+
+.animate__animated.animate__backInUp {
+  --animate-duration: 1.5s;
+}
+
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInRight {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__zoomInDown {
+  --animate-duration: 1.5s;
+}
+
+.animate__animated.animate__zoomInUp {
+  --animate-duration: 2.2s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 52.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 112em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+::selection {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #344146;
+  background-color: #f5f4f4;
+}
+
+body::-webkit-scrollbar {
+  width: .4rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 15%;
+}
+
+body.drinksBody::-webkit-scrollbar-thumb {
+  background: #34ace0;
+}
+
+body.dessertBody::-webkit-scrollbar-thumb {
+  background: #FCB941;
+}
+
+body.foodBody::-webkit-scrollbar-thumb {
+  background: #2ecc71;
+}
+
+.mt__small {
+  margin-top: 2rem;
+}
+
+.mt__large {
+  margin-top: 6rem;
+}
+
+.mt__xlarge {
+  margin-top: 8rem;
+}
+
+.mb__small {
+  margin-bottom: 2rem;
+}
+
+.mb__large {
+  margin-bottom: 6rem;
+}
+
+.mb__xlarge {
+  margin-bottom: 8rem;
+}
+
+.center__zero {
+  margin: 0 auto;
+}
+
+.center__small {
+  margin: 2rem auto;
+}
+
+.center__medium {
+  margin: 6rem auto;
+}
+
+.center__large {
+  margin: 8rem auto;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .17;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.choco-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  opacity: .8;
+  overflow: hidden;
+}
+
+.choco-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.firstpart__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rem;
+}
+
+.firstpart__btn a:link,
+.firstpart__btn a:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .1rem;
+  font-size: 1.8rem;
+  padding: 1.2rem 3.5rem;
+  margin: 0 .5rem;
+  border-radius: .5rem;
+  color: #D4D4D4;
+  border: 2px solid #2ecc71;
+  position: relative;
+  display: inline-block;
+  transition: background-color .2s, transform .2s;
+}
+
+.firstpart__btn a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.firstpart__btn a:active {
+  transform: translateY(0);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.firstpart__btn--buy {
+  background-color: #2ecc71;
+}
+
+.firstpart__btn--explore:hover {
+  background-color: #2ecc71;
+}
+
+.btn {
+  display: block;
+  font-size: 1.8rem;
+  padding: 1.2rem 3.5rem;
+  margin: 0 .5rem;
+  border-radius: .5rem;
+  color: #fff;
+  background-color: #2ecc71;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .btn {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.food__btn {
+  display: block;
+  padding: .7rem 1.3rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #383737;
+  border: none;
+  border-bottom: 3px solid #2ecc71;
+  background-color: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
+  transition: all .3s;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .food__btn {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .food__btn--tab-port {
+    color: #e4e4e4;
+    background-color: #344146;
+  }
+}
+
+@media only screen and (max-width: 52.25em) {
+  .food__btn--tab-port {
+    color: #e4e4e4;
+    background-color: #344146;
+  }
+}
+
+.food__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  color: #e4e4e4;
+  background-color: #2ecc71;
+}
+
+.food__btn:focus {
+  outline: none;
+}
+
+.food__btn:active {
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.4);
+  transform: translateY(0);
+}
+
+.foodMenu__btn {
+  display: block;
+  font-size: 1.5rem;
+  background-color: inherit;
+  color: #383737;
+  padding: .5rem 1.5rem;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 2px solid #2ecc71;
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.foodMenu__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  color: #e4e4e4;
+  background-color: #2ecc71;
+  border-bottom: 2px solid #2ecc71;
+}
+
+.foodMenu__btn:focus {
+  outline: none;
+}
+
+.foodMenu__btn:active {
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.4);
+  transform: translateY(0);
+}
+
+.card__btn {
+  align-self: center;
+  padding: 1rem 2.5rem;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  border: none;
+  color: rgba(228, 228, 228, 0.9);
+  background-color: #FCB941;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.card__btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2.2rem rgba(0, 0, 0, 0.3);
+}
+
+.card__btn:focus {
+  outline: none;
+}
+
+.card__btn:active {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+
+.icecream__btn {
+  align-self: center;
+  margin: 5rem auto;
+  padding: .6rem 2rem;
+  text-transform: uppercase;
+  border: none;
+  background-color: #fff;
+  color: #FCB941;
+  font-size: 1.4rem;
+  font-weight: 300;
+  border-bottom: 2px solid #FCB941;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 0.7rem 1.5rem rgba(52, 65, 70, 0.2);
+  transition: all .2s;
+}
+
+.icecream__btn:hover {
+  color: #fff;
+  background-color: #FCB941;
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(52, 65, 70, 0.6);
+}
+
+.icecream__btn:focus {
+  outline: none;
+}
+
+.icecream__btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0.7rem 1.5rem rgba(52, 65, 70, 0.2);
+}
+
+.chocolate__card__button {
+  padding: .7rem 3.5rem;
+  border: none;
+  font-size: 1.4rem;
+  letter-spacing: 1.3px;
+  color: #FCB941;
+  text-transform: uppercase;
+  border-bottom: 2px solid #FCB941;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 0.7rem 1.5rem rgba(52, 65, 70, 0.2);
+  transition: all .2s;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .chocolate__card__button {
+    margin: 3rem 0 0 0;
+  }
+}
+
+.chocolate__card__button:hover {
+  color: #fff;
+  background-color: #FCB941;
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(52, 65, 70, 0.6);
+}
+
+.chocolate__card__button:focus {
+  outline: none;
+}
+
+.chocolate__card__button:active {
+  transform: translateY(0);
+  box-shadow: 0 0.7rem 1.5rem rgba(52, 65, 70, 0.2);
+}
+
+.dessert__btn {
+  align-self: flex-start;
+  margin: 1rem 4rem;
+  padding: .7rem 2rem;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 3px;
+  color: #636e72;
+  background-color: #fff;
+  border-bottom: 4px solid #FCB941;
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.5rem rgba(20, 20, 20, 0.3);
+  transition: all .2s;
+}
+
+.dessert__btn:hover {
+  transform: translateY(-4px);
+  color: #fff;
+  background-color: #FCB941;
+  box-shadow: -0.1rem -0.1rem 2rem rgba(212, 212, 212, 0.3), 0.5rem 0.6rem 1.5rem rgba(20, 20, 20, 0.9);
+}
+
+.dessert__btn:focus {
+  outline: none;
+}
+
+.dessert__btn:active {
+  transform: translateY(0);
+  box-shadow: -0.2rem -0.2rem 2.5rem rgba(212, 212, 212, 0.3), 0.3rem 0.4rem 1.5rem rgba(20, 20, 20, 0.8);
+}
+
+.cake__btn {
+  text-transform: uppercase;
+  padding: .7rem 2rem;
+  margin-bottom: 10rem;
+  color: rgba(56, 55, 55, 0.7);
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  background-color: #fff;
+  border: none;
+  border-radius: 3px;
+  border-bottom: 2px solid #FCB941;
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.5rem rgba(20, 20, 20, 0.3);
+  transition: all .2s;
+}
+
+.cake__btn:hover {
+  transform: translateY(-5px);
+  color: #fff;
+  background-color: #FCB941;
+  box-shadow: 0 0.6rem 1.7rem rgba(20, 20, 20, 0.6);
+}
+
+.cake__btn:focus {
+  outline: none;
+}
+
+.cake__btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0.4rem 1.5rem rgba(20, 20, 20, 0.3);
+}
+
+.sweets__btn {
+  align-self: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #FCB941;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: .7px;
+  border-radius: 3px;
+  border: 1px solid #FCB941;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .sweets__btn {
+    margin-bottom: 20%;
+    margin-left: 20%;
+  }
+}
+
+.sweets__btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.7rem 1.5rem rgba(0, 0, 0, 0.5);
+  color: #383737;
+  background-color: #FCB941;
+}
+
+.sweets__btn:focus {
+  outline: none;
+}
+
+.sweets__btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+a.drinks__btn:link,
+a.drinks__btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  border-radius: 3px;
+  border: 1px solid #34ace0;
+  background-color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: #34ace0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+a.drinks__btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.4);
+  background-color: #34ace0;
+  color: #fff;
+}
+
+a.drinks__btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.drinks__button {
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 3px solid #34ace0;
+  background-color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: #34ace0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.drinks__button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.4);
+  background-color: #34ace0;
+  color: #fff;
+}
+
+.drinks__button:focus {
+  outline: none;
+}
+
+.drinks__button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.coffeBody__btn__small {
+  align-self: center;
+  padding: .7rem 2rem;
+  margin-bottom: .7rem;
+  background-color: #fff;
+  color: #34ace0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all .2s ease;
+}
+
+.coffeBody__btn__small:hover {
+  transform: translateY(-4px);
+  background-color: #34ace0;
+  color: #fff;
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.4);
+}
+
+.coffeBody__btn__small:focus {
+  outline: none;
+}
+
+.coffeBody__btn__small:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.card {
+  perspective: 150rem;
+  position: relative;
+  width: 25rem;
+  height: 35rem;
+  margin: .5rem;
+  cursor: pointer;
+}
+
+.card__side {
+  height: 35rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: all .8s ease;
+}
+
+.card__side--back {
+  transform: rotateY(-180deg);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.65), rgba(212, 212, 212, 0.85));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card__side--back h2 {
+  display: flex;
+  justify-content: center;
+  color: rgba(52, 65, 70, 0.8);
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.card__side--back h5 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  color: rgba(52, 65, 70, 0.6);
+}
+
+.card:hover .card__side--front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card__side--back {
+  transform: rotateY(0deg);
+}
+
+.card__picture {
+  background-size: cover;
+  height: 35rem;
+  background-blend-mode: screen;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.card__picture--1 {
+  background-image: url(../img/Dulciuri/icecream-1.jpg);
+}
+
+.card__picture--2 {
+  background-image: url(../img/Dulciuri/icecream-2.jpg);
+}
+
+.card__picture--3 {
+  background-image: url(../img/Dulciuri/icecream-4.jpg);
+}
+
+.card__picture--4 {
+  background-image: url(../img/Dulciuri/icecream-5.jpg);
+}
+
+.card__title {
+  text-transform: uppercase;
+  color: #383737;
+  position: absolute;
+  bottom: 1rem;
+  right: .5rem;
+}
+
+.card__title--span {
+  padding: .2rem .9rem;
+  font-size: 1.6rem;
+  font-family: "Dancing Script", cursive;
+  border-radius: 3px;
+  background-image: linear-gradient(to right bottom, rgba(212, 212, 212, 0.75), rgba(212, 212, 212, 0.95));
+}
+
+.form {
+  display: block;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .form {
+    padding: 2rem 0;
+  }
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1rem 1.5rem;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 80%;
+  text-transform: uppercase;
+  display: block;
+  transition: all .3s;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .form__input {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 2px solid #27ae60;
+}
+
+.form__input:focus:invalid {
+  border-bottom: 2px solid red;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #344146;
+}
+
+.form__label {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left: 1.5rem;
+  margin-top: .7rem;
+  color: #27ae60;
+  display: block;
+  transition: all .3s;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .form__label {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 5.5rem;
+  }
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+.footer {
+  width: 100%;
+  padding: 2rem 0 .5rem 0;
+  background-color: #2d3436;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__cards {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.footer__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer h3 {
+  font-size: 2.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+  color: #2ecc71;
+  cursor: default;
+  border-bottom: .15rem solid transparent;
+  transition: all .3s;
+}
+
+.footer h3:hover {
+  transform: scale(1.2);
+  border-bottom: 0.15rem solid #27ae60;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__content ul {
+  list-style: none;
+}
+
+.footer__item {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: .6rem;
+  fill: #D4D4D4;
+}
+
+.footer__link {
+  display: block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: .5rem 0;
+  text-transform: uppercase;
+  color: #D4D4D4;
+  transition: all .3s;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .footer__link {
+    font-size: 1.1rem;
+    padding: .5rem 0;
+  }
+  .footer h3 {
+    font-size: 2.1rem;
+  }
+  .footer h3:hover {
+    transform: none;
+    border-bottom: 0.15rem solid #27ae60;
+  }
+}
+
+.footer__link:hover {
+  transform: scale(1.2);
+}
+
+.footer__legal {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer p {
+  color: #e2e0e0;
+  font-weight: inherit;
+  padding: 2rem;
+}
+
+.foodFooter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodFooter {
+    justify-content: space-evenly;
+  }
+}
+
+.foodFooter ul {
+  display: flex;
+}
+
+.foodFooter__item {
+  list-style: none;
+  margin: 0 1rem;
+  transform: scale(0.9);
+  transition: all .3s;
+}
+
+.foodFooter__item:hover {
+  transform: scale(1);
+}
+
+.foodFooter__link {
+  fill: #2ecc71;
+}
+
+.foodFooter__link:hover {
+  fill: #27ae60;
+}
+
+.foodFooter__icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.header {
+  color: #2ecc71;
+  text-transform: uppercase;
+  font-family: 'Dancing Script', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .header__h {
+  font-size: 2.9rem;
+  letter-spacing: .3rem;
+  word-spacing: 1.8rem;
+}
+
+.header .header__p {
+  font-size: 2.5rem;
+  letter-spacing: .1rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header .header__h {
+    font-size: 1.9rem;
+    letter-spacing: .2rem;
+    word-spacing: 1.2rem;
+  }
+  .header .header__p {
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    font-weight: 500;
+  }
+}
+
+.navigation {
+  background-image: linear-gradient(105deg, rgba(253, 253, 253, 0.4) 0%, rgba(253, 253, 253, 0) 50%, transparent 50%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navigation__item {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.navigation__logo {
+  cursor: pointer;
+  width: 100%;
+}
+
+.navigation__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.navigation__list {
+  list-style: none;
+  padding: 0 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation__list a:link,
+.navigation__list a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #D4D4D4;
+  font-weight: 400;
+  font-size: 2rem;
+  transform: scale(0.9);
+  transition: transform .2s;
+}
+
+.navigation__list a:hover,
+.navigation__list a:active {
+  transform: scale(1);
+}
+
+.active {
+  background-color: #2ecc71;
+}
+
+.active a:link,
+.active a:visited {
+  color: #fff;
+}
+
+.foodNav-bar {
+  width: 100%;
+}
+
+.foodNavigation {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, rgba(226, 224, 224, 0) 0, rgba(226, 224, 224, 0) 40%, rgba(226, 224, 224, 0.5) 60%);
+}
+
+@media only screen and (max-width: 75em) {
+  .foodNavigation {
+    background-color: rgba(212, 212, 212, 0.9);
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .foodNavigation {
+    justify-content: space-evenly;
+  }
+}
+
+.foodNavigation ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foodNavigation__list {
+  padding: 0 2rem;
+  transition: all .3s;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .foodNavigation__list {
+    padding: 0 .5rem;
+  }
+}
+
+.foodNavigation__list a:link,
+.foodNavigation__list a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  color: rgba(56, 55, 55, 0.2);
+  position: relative;
+  transition: color .3s;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .foodNavigation__list a:link,
+  .foodNavigation__list a:visited {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+.foodNavigation__list a:link span,
+.foodNavigation__list a:visited span {
+  color: #27ae60;
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodNavigation__list a:link span,
+  .foodNavigation__list a:visited span {
+    color: #2ecc71;
+  }
+}
+
+.foodNavigation__list a:link span.foodNavigation--desserts,
+.foodNavigation__list a:visited span.foodNavigation--desserts {
+  color: #D98B3A;
+}
+
+.foodNavigation__list a:link span.foodNavigation__drinks,
+.foodNavigation__list a:visited span.foodNavigation__drinks {
+  color: #34ace0;
+}
+
+.foodNavigation__list a:hover,
+.foodNavigation__list a:active {
+  color: rgba(56, 55, 55, 0.7);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodNavigation__list a:hover,
+  .foodNavigation__list a:active {
+    color: rgba(56, 55, 55, 0.9);
+  }
+}
+
+.foodNavigation__icon {
+  height: 2.2rem;
+  width: 2.2rem;
+  fill: #383737;
+}
+
+.focusat a:link,
+.focusat a:visited {
+  color: rgba(56, 55, 55, 0.8);
+  border-bottom: 3px solid #2ecc71;
+}
+
+.focusat--desserts a:link,
+.focusat--desserts a:visited {
+  color: rgba(56, 55, 55, 0.8);
+  border-bottom: 3px solid #FCB941;
+}
+
+.focusat--drinks a:link,
+.focusat--drinks a:visited {
+  color: rgba(56, 55, 55, 0.8);
+  border-bottom: 3px solid #34ace0;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #2ecc71, #27ae60);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: transform .3s;
+}
+
+.title:hover {
+  transform: skewY(2deg) skewX(10deg) scale(1.1);
+  text-shadow: 0.2rem 0.5rem 2rem rgba(0, 0, 0, 0.6);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .title:hover {
+    transform: none;
+    text-shadow: none;
+  }
+}
+
+.title__h2 {
+  font-size: 4.5rem;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .title__h2 {
+    font-size: 3.5rem;
+    margin: 2rem auto;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .title__h2 {
+    display: block;
+    font-size: 3rem;
+    margin: 1.5rem auto;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+.firstpart {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Wallpapers/wallpaper-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .firstpart {
+    height: 85vh;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .firstpart {
+    height: 50vh;
+  }
+}
+
+.explore {
+  margin: 10rem 2.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .explore {
+    margin: 4rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .explore {
+    margin: 1rem 1rem;
+  }
+}
+
+.explore__box {
+  display: flex;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .explore__box {
+    flex-direction: column;
+    margin: 1rem auto;
+    padding: 1.5rem 0;
+  }
+}
+
+.explore__image {
+  flex: 0 0 30%;
+}
+
+.explore__img {
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+  border-radius: .7rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  transform: scale(0.9);
+  filter: brightness(80%);
+  transition: transform .4s, filter .3s, box-shadow .3s;
+}
+
+.explore__img:hover {
+  filter: brightness(100%);
+  box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+}
+
+.explore__img:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .explore__img {
+    width: 100%;
+    transform: scale(1);
+    filter: brightness(100%);
+  }
+  .explore__img:hover {
+    filter: none;
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+.explore__text {
+  flex: 0 0 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.explore__text h3 {
+  color: #383737;
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .explore__text h3 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+}
+
+.explore__text p {
+  color: #383737;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .explore__text span {
+    display: none;
+  }
+}
+
+.cook {
+  background-color: #e2e0e0;
+  display: flex;
+}
+
+@media only screen and (min-width: 112em) {
+  .cook {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cook {
+    padding: 2rem 0;
+    flex-direction: column;
+  }
+}
+
+.cook__description {
+  color: #344146;
+  padding: 7rem 3.5rem;
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cook__description {
+    padding: 0 .5rem;
+  }
+}
+
+.cook__description h3 {
+  font-size: 2.7rem;
+  font-weight: 300;
+  align-self: center;
+}
+
+.cook__description p {
+  text-indent: 5rem;
+}
+
+.cook__photos {
+  flex: 0 0 50%;
+  position: relative;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cook__photos {
+    padding: 2rem;
+  }
+}
+
+.cook__photo {
+  display: block;
+  position: absolute;
+  width: 50%;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: .3rem;
+  z-index: 10;
+  filter: brightness(80%);
+  transition: all .3s;
+}
+
+.cook__photo--1 {
+  bottom: 10rem;
+  left: 10rem;
+}
+
+.cook__photo--2 {
+  bottom: 15rem;
+  left: 15rem;
+}
+
+.cook__photo--3 {
+  bottom: 20rem;
+  left: 20rem;
+}
+
+.cook__photo--4 {
+  bottom: 25rem;
+  left: 25rem;
+}
+
+.cook__photo--5 {
+  bottom: 30rem;
+  left: 30rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .cook__photo--1 {
+    top: 5%;
+    left: 15%;
+  }
+  .cook__photo--2 {
+    top: 25%;
+    left: 35%;
+  }
+  .cook__photo--3 {
+    top: 40%;
+    left: 15%;
+  }
+  .cook__photo--4 {
+    bottom: 25%;
+    left: 35%;
+  }
+  .cook__photo--5 {
+    bottom: 5%;
+    left: 15%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cook__photo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem auto;
+    position: unset;
+  }
+  .cook__photo--3 {
+    display: none;
+  }
+  .cook__photo--4 {
+    display: none;
+  }
+}
+
+.cook__photo:hover {
+  transform: scale(1.2);
+  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.6);
+  z-index: 20;
+  filter: brightness(100%);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cook__photo:hover {
+    transform: none;
+    box-shadow: none;
+    z-index: 20;
+    filter: brightness(100%);
+  }
+}
+
+.restaurant {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  display: flex;
+  position: relative;
+}
+
+@media only screen and (min-width: 112em) {
+  .restaurant {
+    height: 90vh;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .restaurant {
+    padding: 2rem 0;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 52.25em) {
+  .restaurant {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.restaurant__photos {
+  flex: 0 0 50%;
+  position: relative;
+}
+
+@media only screen and (min-width: 112em) {
+  .restaurant__photos {
+    flex: 0 0 30%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .restaurant__photos {
+    order: 1;
+    padding: 1rem;
+  }
+}
+
+.restaurant__photo {
+  display: block;
+  position: absolute;
+  width: 45%;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: .3rem;
+  z-index: 10;
+  filter: brightness(80%);
+  transition: all .3s;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .restaurant__photo {
+    width: 90%;
+  }
+}
+
+.restaurant__photo:hover {
+  transform: scale(1.3);
+  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.6);
+  z-index: 20;
+  filter: brightness(100%);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .restaurant__photo:hover {
+    transform: none;
+    box-shadow: none;
+    z-index: 20;
+    filter: brightness(100%);
+  }
+}
+
+.restaurant__photo--1 {
+  top: 16rem;
+  left: 4.5rem;
+}
+
+.restaurant__photo--2 {
+  top: 10rem;
+  left: 30rem;
+}
+
+.restaurant__photo--3 {
+  top: 28rem;
+  left: 27rem;
+}
+
+.restaurant__photo--4 {
+  top: 36rem;
+  left: 3rem;
+}
+
+.restaurant__photo--5 {
+  top: 45rem;
+  left: 16rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .restaurant__photo--1 {
+    top: 5rem;
+    left: 20rem;
+  }
+  .restaurant__photo--2 {
+    top: 17rem;
+    left: 10rem;
+  }
+  .restaurant__photo--3 {
+    top: 28rem;
+    left: 20rem;
+  }
+  .restaurant__photo--4 {
+    top: 38rem;
+    left: 10rem;
+  }
+  .restaurant__photo--5 {
+    top: 48rem;
+    left: 20rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .restaurant__photo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem auto;
+    position: unset;
+  }
+  .restaurant__photo--3 {
+    display: none;
+  }
+  .restaurant__photo--4 {
+    display: none;
+  }
+}
+
+.restaurant__description {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 .5rem;
+}
+
+@media only screen and (min-width: 112em) {
+  .restaurant__description {
+    flex: 0 0 70%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .restaurant__description {
+    flex: 0 0 70%;
+  }
+}
+
+.restaurant__description h3 {
+  font-size: 2.7rem;
+  font-weight: 300;
+  align-self: center;
+}
+
+.restaurant__description p {
+  text-indent: 5rem;
+  padding: .3rem;
+  line-height: 1.7;
+}
+
+.reviews {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  padding: 5rem 0;
+  background-color: #344146;
+  color: #e2e0e0;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .reviews {
+    padding: 2rem 1rem;
+    flex-direction: column;
+  }
+}
+
+.reviews p {
+  border-bottom: 0.2rem solid #27ae60;
+  text-indent: 2rem;
+  flex: 1;
+}
+
+.reviews__review {
+  box-shadow: 0 0.7rem 3rem rgba(0, 0, 0, 0.5);
+  margin: 1rem auto;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  flex: 0 0 23%;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.reviews__review:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .reviews__review span {
+    display: none;
+  }
+  .reviews__review:hover {
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .reviews__review {
+    padding: .2rem .5rem;
+  }
+}
+
+.reviews__box {
+  margin: 1rem .2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.reviews__container {
+  width: 4rem;
+  height: 4rem;
+}
+
+.reviews__img {
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.reviews h4 {
+  font-weight: 700;
+  padding: 0 1rem;
+}
+
+.offerts {
+  background-color: #344146;
+  padding: 5rem 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .offerts {
+    padding: .2rem 0;
+    height: 60vh;
+  }
+}
+
+.blackboard {
+  background-color: #141414;
+  width: 70vw;
+  height: 100%;
+  color: #D4D4D4;
+  outline: 1rem solid #D4D4D4;
+  font-family: "Dancing Script", cursive;
+  box-shadow: 0 1rem 5rem 3rem rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .blackboard {
+    width: 90vw;
+  }
+}
+
+.blackboard p {
+  font-size: 3rem;
+  color: red;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .blackboard {
+    width: 100%;
+    outline: none;
+  }
+  .blackboard p {
+    font-size: 2.5rem;
+  }
+}
+
+.blackboard__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.blackboard__main h3 {
+  font-size: 4.5rem;
+  border: 2px solid #D4D4D4;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .blackboard__main h3 {
+    font-size: 3.5rem;
+    border: 1.5px solid #D4D4D4;
+  }
+}
+
+.blackboard__footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.blackboard__card {
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform .5s;
+}
+
+.blackboard__card:hover {
+  transform: scale(1.3);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .blackboard__card:hover {
+    transform: none;
+  }
+}
+
+.blackboard__card h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  border-bottom: 4.5px solid #D4D4D4;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .blackboard__card h4 {
+    font-size: 3rem;
+    border-bottom: 2.5px solid #D4D4D4;
+  }
+}
+
+.blackboard__card ul {
+  list-style: none;
+}
+
+.blackboard__offert {
+  font-size: 2rem;
+  padding: .5rem;
+  transition: all .3s;
+}
+
+.blackboard__offert span {
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .blackboard__offert {
+    font-size: 1.6rem;
+  }
+  .blackboard__offert span {
+    margin-left: .6rem;
+  }
+}
+
+.blackboard__offert-red:hover {
+  color: red;
+}
+
+.blackboard__offert-yellow:hover {
+  color: yellowgreen;
+}
+
+.blackboard__offert-green:hover {
+  color: green;
+}
+
+.book {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(52, 65, 70, 0), rgba(52, 65, 70, 0)), url(../img/Mancare/wallpaper-forHome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.book .empty {
+  flex: 0 1 55%;
+}
+
+.book .content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 0 1 45%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .book {
+    height: 70vh;
+    background-image: linear-gradient(to bottom, rgba(52, 65, 70, 0.7), rgba(52, 65, 70, 0.5)), url(../img/Mancare/wallpaper-forHome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .book .empty {
+    display: none;
+  }
+  .book .content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.foodWelcome {
+  height: 100vh;
+  margin: 0 auto;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)), url(../img/Mancare/food-wallpaper-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 75em) {
+  .foodWelcome {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodWelcome {
+    height: 80vh;
+    align-content: center;
+  }
+}
+
+.foodWelcome__container {
+  display: flex;
+  height: inherit;
+}
+
+.foodWelcome__left {
+  flex: 0 1 50%;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodWelcome__left {
+    display: none;
+  }
+}
+
+.foodWelcome__right {
+  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media only screen and (max-width: 75em) {
+  .foodWelcome__right {
+    background-color: rgba(212, 212, 212, 0.9);
+  }
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodWelcome__right {
+    flex: 1;
+    background-color: rgba(212, 212, 212, 0.8);
+  }
+}
+
+.foodWelcome__foodHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: #27ae60;
+  font-family: "Dancing Script", cursive;
+}
+
+.foodWelcome__foodHeader h1 {
+  font-size: 12rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .foodWelcome__foodHeader h1 {
+    font-size: 6rem;
+  }
+}
+
+.foodWelcome__foodHeader h3 {
+  font-size: 5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .foodWelcome__foodHeader h3 {
+    font-size: 4rem;
+  }
+}
+
+.foodWelcome__foodHeader p {
+  color: #383737;
+  font-size: 4rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .foodWelcome__foodHeader p {
+    font-size: 3rem;
+  }
+}
+
+.foodItalian {
+  height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0% 100%);
+}
+
+@media only screen and (max-width: 75em) {
+  .foodItalian {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodItalian {
+    height: auto;
+    flex-direction: column;
+    clip-path: none;
+    position: none;
+  }
+}
+
+.foodItalian__left {
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodItalian__left {
+    flex: 1;
+    padding: 2rem;
+  }
+}
+
+.foodItalian__right {
+  flex: 1;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodItalian__right {
+    padding: 3rem 0;
+  }
+}
+
+.foodItalian__img {
+  width: 70%;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodItalian__img {
+    display: none;
+  }
+}
+
+.foodItalian__picture {
+  width: 100%;
+  display: block;
+  border-radius: 2%;
+  filter: brightness(0.9);
+  transform: scale(0.9);
+  box-shadow: 0 1rem 4rem rgba(52, 65, 70, 0.3);
+  transition: all .2s;
+}
+
+@media only screen and (min-width: 112em) {
+  .foodItalian__picture {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodItalian__picture {
+    transform: none;
+  }
+}
+
+.foodItalian__picture:hover {
+  box-shadow: 0 2rem 4rem 0.62rem rgba(52, 65, 70, 0.5);
+  transform: scale(1);
+  filter: brightness(1);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodItalian__picture:hover {
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodItalian__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem .5rem;
+  }
+}
+
+.foodItalian__description p {
+  color: rgba(56, 55, 55, 0.5);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodItalian__description p {
+    padding: 0 1rem;
+  }
+}
+
+.foodItalian__h2 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.foodItalian__cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 75em) {
+  .foodItalian__cards {
+    margin: 3rem 0;
+  }
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodItalian__cards {
+    margin: 5rem 0;
+    justify-content: space-evenly;
+  }
+}
+
+.foodItalian__card {
+  height: 15rem;
+  width: 15rem;
+  margin: 0 .5rem;
+  background-color: rgba(226, 224, 224, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.foodItalian__bara {
+  display: block;
+  width: 70%;
+  height: 3px;
+  background-color: #2ecc71;
+}
+
+.foodItalian__number {
+  color: rgba(56, 55, 55, 0.5);
+}
+
+.foodHamburger {
+  height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodHamburger {
+    flex-direction: column;
+    clip-path: none;
+    height: 100%;
+  }
+}
+
+.foodHamburger__left {
+  flex: 0 1 50%;
+  padding: 10rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodHamburger__left {
+    flex: 1;
+    padding: 0 .5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.foodHamburger__right {
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: baseline;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodHamburger__right {
+    order: -1;
+    padding: 0;
+  }
+}
+
+.foodHamburger__right--1 {
+  order: 1;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodHamburger__right--1 {
+    display: none;
+  }
+}
+
+.foodHamburger__right--2 {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodHamburger__right--2 {
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    margin: 5rem auto;
+    padding: 0;
+  }
+}
+
+.foodHamburger__img {
+  display: block;
+  width: 100%;
+  margin: 1rem 2rem;
+  border-radius: 2%;
+  filter: brightness(0.9);
+  box-shadow: 0 1rem 4rem rgba(52, 65, 70, 0.3);
+  transform: scale(0.9);
+  transition: all .2s;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodHamburger__img {
+    width: 40%;
+    margin: 0;
+    transform: none;
+    filter: none;
+    box-shadow: none;
+    margin: 0 auto;
+  }
+}
+
+.foodHamburger__img:hover {
+  box-shadow: 0 2rem 4rem rgba(52, 65, 70, 0.7);
+  transform: scale(1);
+  filter: brightness(1);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodHamburger__img:hover {
+    box-shadow: none;
+  }
+}
+
+.foodPasta {
+  height: 100vh;
+  clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
+  position: relative;
+  display: flex;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodPasta {
+    flex-direction: column;
+    clip-path: none;
+    height: 100%;
+  }
+}
+
+.foodMenu {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5rem 0;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodMenu {
+    flex-direction: column;
+  }
+}
+
+.foodMenu__left {
+  flex: 0 1 45%;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodMenu__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.foodMenu__right {
+  flex: 0 1 45%;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodMenu__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.foodMenu__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+  min-height: 10rem;
+  background-color: rgba(226, 224, 224, 0.25);
+  transition: all .3s;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .foodMenu__card {
+    width: 100%;
+  }
+}
+
+.foodMenu__card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(226, 224, 224, 0.35);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.foodMenu__picture {
+  height: 8rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.foodMenu__img {
+  height: 100%;
+  display: block;
+  border-radius: 3px;
+}
+
+.foodMenu__description {
+  flex: 1;
+}
+
+.foodMenu__description h5 {
+  font-size: 1.7rem;
+}
+
+.foodMenu__description p {
+  padding: 0 .3rem;
+  font-size: 1.4rem;
+}
+
+.foodMenu__bara {
+  height: 8rem;
+  width: 3px;
+  background-color: #2ecc71;
+}
+
+.foodMenu__buy {
+  margin: 1rem;
+}
+
+.dessertBody ::selection {
+  background-color: #FCB941;
+  color: #fff;
+}
+
+.dessertNavigation {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url(../img/Dulciuri/wallpaper-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .dessertNavigation {
+    height: 60vh;
+  }
+}
+
+.dessertNavigation__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .dessertNavigation__container {
+    justify-content: space-between;
+  }
+}
+
+.dessertNavigation__header {
+  color: #FCB941;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .dessertNavigation__header {
+    align-items: flex-start;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+}
+
+.dessertNavigation__buttons ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .dessertNavigation__buttons {
+    margin-bottom: 3rem;
+  }
+}
+
+.dessertNavigation__list {
+  width: 100%;
+  text-align: center;
+}
+
+.dessertNavigation__list a:link,
+.dessertNavigation__list a:visited {
+  width: 85%;
+  text-align: center;
+  color: #344146;
+  background-color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 2px 5px;
+  padding: .3rem .7rem;
+  border: none;
+  border-bottom: 3px solid #FCB941;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  position: relative;
+  transition: background-color .2s, transform .2s, box-shadow .2s;
+}
+
+.dessertNavigation__list a:hover {
+  background-color: #FCB941;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.dessertNavigation__list a:active {
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+
+.icecream {
+  height: auto;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(to right bottom, rgba(212, 212, 212, 0.1), rgba(212, 212, 212, 0.8));
+}
+
+@media only screen and (max-width: 75em) {
+  .icecream {
+    height: auto;
+  }
+}
+
+.icecream__header {
+  display: flex;
+  justify-content: center;
+  height: 15rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .icecream__header {
+    margin: 2rem 0;
+    text-align: center;
+    line-height: 1;
+  }
+}
+
+.icecream__header h1 {
+  color: #FCB941;
+  font-size: calc(5.5rem + 80%);
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 5.5px;
+}
+
+.icecream__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icecream__cards {
+  display: block;
+}
+
+.chocolate {
+  height: auto;
+  padding: 5rem 0;
+  background-image: linear-gradient(to bottom, rgba(212, 212, 212, 0.5), rgba(212, 212, 212, 0.7)), url(../img/Dulciuri/chocolate-wallpaper-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .chocolate {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .chocolate {
+    padding: 0;
+  }
+}
+
+.chocolate__container {
+  width: 90vw;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(212, 212, 212, 0.95);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .chocolate__container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .chocolate__container {
+    padding: 0;
+  }
+}
+
+.chocolate__menu {
+  height: 80vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .chocolate__menu {
+    margin: 2rem 0;
+    order: 2;
+  }
+}
+
+.chocolate__card {
+  display: flex;
+  width: 90%;
+  height: 15%;
+  background-color: rgba(212, 212, 212, 0.9);
+  border-radius: 7px;
+  font-family: "Dancing Script", cursive;
+  box-shadow: -0.9rem -0.9rem 0.9rem 0 rgba(255, 255, 255, 0.15), 0.9rem 0.9rem 0.9rem 0 rgba(0, 0, 0, 0.15);
+  transition: all .2s;
+  cursor: pointer;
+  color: rgba(56, 55, 55, 0.7);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .chocolate__card {
+    margin: 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .chocolate__card {
+    width: 95%;
+    height: 12%;
+  }
+}
+
+.chocolate__card__image {
+  flex: 0 1 35%;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.chocolate__card__image img {
+  display: block;
+  width: 100%;
+}
+
+.chocolate__card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chocolate__card__body h3 {
+  font-size: 2.5rem;
+}
+
+.chocolate__card:hover {
+  transform: scale(1.05);
+  background-color: rgba(212, 212, 212, 0.5);
+  color: #383737;
+  box-shadow: -1rem -1rem 1rem 0 rgba(255, 255, 255, 0.25), 1rem 1rem 1rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.chocolate__description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: stretch;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .chocolate__description {
+    order: 1;
+  }
+}
+
+.chocolate__bara--p {
+  width: 95%;
+  height: 2px;
+  background-color: rgba(52, 65, 70, 0.4);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .chocolate__header {
+    margin: 2rem 0;
+  }
+}
+
+.chocolate__header h2 {
+  font-size: 5rem;
+  font-family: "Dancing Script", cursive;
+  color: rgba(252, 185, 65, 0.7);
+}
+
+.chocolate__paragraph {
+  padding: 0 1rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .chocolate__paragraph {
+    margin: 2rem 0;
+  }
+}
+
+.chocolate__paragraph p {
+  font-family: "Dancing Script", cursive;
+  color: rgba(52, 65, 70, 0.7);
+  font-size: 2rem;
+  text-indent: 2rem;
+}
+
+.chocolate__paragraph p::first-letter {
+  font-size: 2.9rem;
+}
+
+.chocolate__video {
+  height: 80vh;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .chocolate__video {
+    height: 50vh;
+    width: 90%;
+    order: -1;
+    margin: 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .chocolate__video {
+    height: 50vh;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.chocolate__clip {
+  height: 80%;
+  width: 90%;
+  position: relative;
+  border-radius: 3%;
+  overflow: hidden;
+  box-shadow: 0.2rem 0.7rem 2rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all .2s;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .chocolate__clip {
+    border-radius: 3%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .chocolate__clip {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+.chocolate__clip:hover {
+  box-shadow: 0.5rem 1rem 2.5rem rgba(0, 0, 0, 0.4);
+  transform: translateY(-1rem) translateX(-0.5rem);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .chocolate__clip:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+.dessert {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(212, 212, 212, 0), rgba(212, 212, 212, 0)), url(../img/Dulciuri/dessert--wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .dessert {
+    height: 80vh;
+  }
+}
+
+.dessert__container {
+  height: 100%;
+  width: 50rem;
+  color: #D4D4D4;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  background-color: rgba(52, 65, 70, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dessert__container h3 {
+  text-align: center;
+  margin: 5rem 0;
+  font-family: "Dancing Script", cursive;
+  color: #FCB941;
+}
+
+.dessert__container p {
+  padding: 1rem 4rem;
+}
+
+.dessert__container__ul {
+  display: flex;
+}
+
+.dessert__container__item {
+  list-style: none;
+}
+
+.dessert__container__item--1 {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.dessert__container__item--2 {
+  flex: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dessert__container__item--3 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.dessert__container__item a:link,
+.dessert__container__item a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: rgba(228, 228, 228, 0.7);
+  font-size: 1.4rem;
+  transition: all .3s;
+}
+
+.dessert__container__item a:hover {
+  color: rgba(228, 228, 228, 0.9);
+}
+
+.dessert__container__search {
+  border: none;
+  border-radius: 1.5rem;
+  height: 70%;
+  width: 75%;
+  transition: all .3s;
+  font-family: "Roboto", sans-serif;
+  color: #e4e4e4;
+  background-color: rgba(99, 110, 114, 0.2);
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-left: 2rem;
+}
+
+.dessert__container__search:hover {
+  background-color: rgba(99, 110, 114, 0.7);
+  width: 85%;
+}
+
+.dessert__container__search:focus {
+  outline: none;
+}
+
+.dessert__container__search::-webkit-input-placeholder {
+  color: rgba(228, 228, 228, 0.7);
+  font-size: 1.5rem;
+}
+
+.dessert__container__button {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  background-color: transparent;
+  margin-left: -3rem;
+  cursor: pointer;
+}
+
+.dessert__container__button:focus {
+  outline: none;
+}
+
+.dessert__container__icon {
+  width: 100%;
+  height: 100%;
+  fill: rgba(228, 228, 228, 0.5);
+}
+
+.dessert__container__footer {
+  display: flex;
+  align-items: center;
+  padding: .5rem 0;
+}
+
+.dessert__container__footer a {
+  flex: 1;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: .5rem;
+  font-family: "Roboto", sans-serif;
+  color: rgba(228, 228, 228, 0.7);
+}
+
+.dessert__container__footer a:hover {
+  color: rgba(228, 228, 228, 0.9);
+}
+
+.dessert__container__footer__pictures {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 4;
+}
+
+.dessert__container__footer__img {
+  height: 5rem;
+  width: 7rem;
+  display: block;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.dessert__container__footer__img:hover:not(.dessert__container__footer__active) {
+  transform: translateY(-8px);
+  box-shadow: -0.2rem -0.2rem 2.5rem rgba(212, 212, 212, 0.5), 0.3rem 0.4rem 1.5rem rgba(20, 20, 20, 0.8);
+}
+
+.dessert__container__footer__active {
+  transform: translateY(-8px);
+  box-shadow: -0.2rem -0.2rem 2.5rem rgba(212, 212, 212, 0.5), 0.3rem 0.4rem 1.5rem rgba(20, 20, 20, 0.8);
+}
+
+.dessert__price {
+  margin: 2rem 0;
+  padding: 0 4rem;
+  color: #FCB941;
+  font-size: 2.5rem;
+}
+
+.dessert__nav {
+  width: 100%;
+}
+
+.cake {
+  height: 100vh;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.97) 0%, rgba(255, 255, 255, 0.97) 35%, transparent 30%), url(../img/Dulciuri/cake-wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cake {
+    height: 70vh;
+  }
+}
+
+.cake__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.cake__ul {
+  padding: 0 1.2rem;
+}
+
+.cake__ul__right {
+  display: flex;
+}
+
+.cake__item {
+  list-style: none;
+  margin: 0 .5rem;
+  transition: all .2s;
+}
+
+.cake__item:not(:last-of-type) {
+  margin-right: 3rem;
+}
+
+.cake__item a:link,
+.cake__item a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(56, 55, 55, 0.7);
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.cake__item a:hover,
+.cake__item a:active {
+  color: #383737;
+}
+
+.cake__item:hover {
+  transform: scale(1.1);
+}
+
+.cake__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cake__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20%;
+}
+
+.cake__text h1 {
+  font-size: 7rem;
+  font-family: "Dancing Script", cursive;
+  color: #FCB941;
+  padding: 0 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 3px;
+  box-shadow: -0.9rem -0.9rem 0.9rem 0 rgba(255, 255, 255, 0.15), 0.9rem 0.9rem 0.9rem 0 rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cake__text h1 {
+    font-size: 5rem;
+  }
+}
+
+.cake__text h2 {
+  font-size: 7rem;
+  font-family: "Dancing Script", cursive;
+  color: #FCB941;
+  padding: 0 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 5%;
+  border-radius: 3px;
+  box-shadow: -0.9rem -0.9rem 0.9rem 0 rgba(255, 255, 255, 0.15), 0.9rem 0.9rem 0.9rem 0 rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cake__text h2 {
+    font-size: 5rem;
+  }
+}
+
+.cake__text__header {
+  margin-left: 25%;
+  letter-spacing: 1.5px;
+}
+
+.cake__paragraph {
+  margin-left: 12%;
+  padding: 0 1rem;
+  border-radius: 3px;
+  box-shadow: -0.9rem -0.9rem 0.9rem 0 rgba(255, 255, 255, 0.15), 0.9rem 0.9rem 0.9rem 0 rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cake__paragraph {
+    padding: -1px 1rem;
+  }
+}
+
+.cake__paragraph p {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.3rem;
+  color: rgba(56, 55, 55, 0.6);
+  font-weight: 600;
+}
+
+.cake__paragraph p span {
+  font-size: 4rem;
+  color: #FCB941;
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cake__paragraph p span {
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 52.25em) {
+  .cake__paragraph p {
+    background-color: rgba(255, 255, 255, 0.99);
+  }
+}
+
+.cake__cta {
+  margin-left: 12%;
+}
+
+.cake__footer {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cake__footer {
+    flex-direction: column;
+  }
+}
+
+.cake__footer__left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.cake__footer__left ul {
+  display: flex;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cake__footer__left {
+    order: 2;
+  }
+}
+
+.cake__footer__item {
+  list-style: none;
+  margin: 0 .5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cake__footer__item {
+    margin: 0 1.5rem;
+  }
+}
+
+.cake__footer__item a:link,
+.cake__footer__item a:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgba(56, 55, 55, 0.7);
+  transition: all .2s;
+}
+
+.cake__footer__item a:hover {
+  color: rgba(56, 55, 55, 0.9);
+}
+
+.cake__footer__midle {
+  flex: 2;
+  border: 2px solid #FCB941;
+  border-bottom: none;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cake__footer__midle {
+    order: 1;
+  }
+}
+
+.cake__footer__midle__box {
+  width: 100%;
+  height: 10rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cake__footer__midle__box h3 {
+  padding: 0 5.5rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.8rem;
+  color: rgba(56, 55, 55, 0.6);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cake__footer__midle__box h3 {
+    padding: 0 .5rem;
+    font-size: 1.6rem;
+  }
+}
+
+.cake__footer__midle__img {
+  height: 10rem;
+  width: auto;
+}
+
+.cake__footer__midle:hover {
+  background-color: #FCB941;
+}
+
+.cake__footer__right {
+  flex: 1;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cake__footer__right {
+    width: 100%;
+    order: 2;
+    margin: 1rem 0;
+  }
+}
+
+.cake__footer__right__ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cake__footer__right__ul {
+    margin: 1rem 0;
+  }
+}
+
+.cake__footer__right__ul li {
+  list-style: none;
+  transition: all .3s;
+}
+
+.cake__footer__right__ul li:hover {
+  transform: translateY(-5px);
+}
+
+.cake__footer__right__icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.cake__footer__right__pict--1 {
+  fill: #4267B2;
+}
+
+.cake__footer__right__pict--2 {
+  fill: #833AB4;
+}
+
+.cake__footer__right__pict--3 {
+  fill: #FF0000;
+}
+
+.sweets {
+  height: 100vh;
+  display: flex;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .sweets {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.sweets__left {
+  flex: 0 1 60%;
+  background-image: linear-gradient(to right, rgba(226, 224, 224, 0.2), rgba(226, 224, 224, 0.2)), url(../img/Dulciuri/wallpaper-1.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sweets__header {
+  width: 100%;
+}
+
+.sweets__header ul {
+  display: flex;
+}
+
+.sweets__header__item {
+  list-style: none;
+  height: 3rem;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sweets__header__item a:link,
+.sweets__header__item a:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(56, 55, 55, 0.7);
+  transform: scale(1);
+  border-bottom: 1.5px solid transparent;
+  font-size: 1.4rem;
+  transition: all .3s;
+}
+
+.sweets__header__item a:hover,
+.sweets__header__item a:active {
+  border-bottom: 1.5px solid #D4D4D4;
+  transform: scale(1.1);
+}
+
+.sweets__header__item--1 {
+  flex: 5;
+  justify-content: start;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .sweets__header__item--1 {
+    justify-content: center;
+  }
+}
+
+.sweets__header__item--2 {
+  flex: 2;
+}
+
+.sweets__header__item--3 {
+  flex: 3;
+}
+
+.sweets__header__item--4 {
+  flex: 2;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .sweets__header__item {
+    flex: 1;
+    padding: 3rem 1rem;
+  }
+}
+
+.sweets__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sweets__container__box {
+  height: 30rem;
+  margin-right: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sweets__container__box h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #FCB941;
+}
+
+.sweets__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sweets__footer__box {
+  margin: 0 2rem;
+  padding: 0 5rem;
+}
+
+.sweets__footer h2 {
+  color: #383737;
+}
+
+.sweets__right {
+  flex: 0 1 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sweets__right__nav h1 {
+  font-size: 5rem;
+}
+
+.sweets__right__box {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 75em) {
+  .sweets__right__box {
+    height: 35vh;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .sweets__right__box {
+    height: 23vh;
+  }
+}
+
+.sweets__right__box--1 {
+  background-image: linear-gradient(to bottom, rgba(212, 212, 212, 0), rgba(212, 212, 212, 0)), url(../img/Dulciuri/sweets-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.sweets__right__box--2 {
+  background-image: linear-gradient(to bottom, rgba(212, 212, 212, 0), rgba(212, 212, 212, 0)), url(../img/Dulciuri/sweets-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.sweets__right__box .dreptunghi {
+  background-color: #2ecc71;
+  display: inline-block;
+  padding: 0 2rem;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.sweets__right__box .dreptunghi p {
+  color: #fff;
+}
+
+.sweets__right__box .rank1 {
+  background-color: red;
+  display: inline-block;
+  padding: 2px 1rem;
+  color: #e4e4e4;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.sweets__right__box h5 {
+  align-self: flex-start;
+  font-size: 2rem;
+  color: #383737;
+  background-color: rgba(228, 228, 228, 0.7);
+  padding: 0 1.5rem;
+  margin: 5px 0;
+}
+
+.menu {
+  min-height: 100vh;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to right bottom, rgba(212, 212, 212, 0.1), rgba(212, 212, 212, 0.8));
+}
+
+@media only screen and (max-width: 52.25em) {
+  .menu {
+    height: auto;
+  }
+}
+
+.menu__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.menu__header__bara {
+  margin: 0 2rem;
+  height: 2px;
+  width: 30%;
+  background-color: rgba(20, 20, 20, 0.7);
+}
+
+.menu__h1 {
+  font-family: "Dancing Script", cursive;
+  color: rgba(20, 20, 20, 0.7);
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .menu__h1 {
+    margin: 1rem 0;
+  }
+}
+
+.menu__cards {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu__card {
+  height: 10rem;
+  width: 50rem;
+  margin: 1rem;
+  border-radius: 7px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .3s;
+  display: flex;
+  background-image: linear-gradient(to right bottom, rgba(212, 212, 212, 0.1), rgba(212, 212, 212, 0.8));
+  box-shadow: -0.9rem -0.9rem 0.9rem 0 rgba(255, 255, 255, 0.15), 0.9rem 0.9rem 0.9rem 0 rgba(0, 0, 0, 0.15);
+}
+
+.menu__card:hover {
+  transform: translateY(-5px);
+  box-shadow: -1.2rem -1.2rem 1.2rem 0 rgba(255, 255, 255, 0.3), 1.2rem 1.2rem 1.2rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.menu__picture {
+  height: 100%;
+  width: 20rem;
+}
+
+.menu__img {
+  height: 100%;
+}
+
+.menu__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu__text h4 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.1rem;
+  letter-spacing: 1.2px;
+}
+
+.menu__text p {
+  font-weight: 100;
+  font-size: 2.3rem;
+}
+
+.social {
+  height: auto;
+  background-color: #2d3436;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social__card {
+  height: 16rem;
+  width: 45rem;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 7px;
+  background-color: #2d3436;
+  box-shadow: -0.9rem -0.9rem 0.9rem 0 rgba(255, 255, 255, 0.15), 0.9rem 0.9rem 0.9rem 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social__paragraph {
+  color: rgba(226, 224, 224, 0.65);
+  font-family: "Dancing Script", cursive;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+.social__box {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+}
+
+.social__picture {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.social__img {
+  display: block;
+  height: 100%;
+}
+
+.social__persons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.social__name {
+  color: #e4e4e4;
+  font-weight: 300;
+}
+
+.social__bara {
+  height: 1px;
+  width: 90%;
+  background-color: rgba(228, 228, 228, 0.65);
+}
+
+.social__about {
+  display: flex;
+}
+
+.social__about p {
+  color: rgba(228, 228, 228, 0.65);
+  font-size: 1.4rem;
+}
+
+.social__offerts {
+  height: auto;
+  width: 100%;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #D4D4D4;
+}
+
+.social__offerts h1 {
+  align-self: center;
+  font-family: "Dancing Script", cursive;
+  color: #FCB941;
+  font-size: 5rem;
+}
+
+.social__offerts__cards {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social__offerts__card {
+  height: 40rem;
+  width: 20rem;
+  margin: 1rem;
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: #D4D4D4;
+  box-shadow: -0.9rem -0.9rem 0.9rem 0 rgba(212, 212, 212, 0.5), 0.9rem 0.9rem 0.9rem 0 rgba(52, 65, 70, 0.5);
+}
+
+.social__offerts__picture {
+  width: 20rem;
+}
+
+.social__offerts__img {
+  width: 100%;
+  display: block;
+}
+
+.dessert__footer {
+  height: 7rem;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, rgba(212, 212, 212, 0.1), rgba(212, 212, 212, 0.8));
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .dessert__footer {
+    flex-direction: column;
+  }
+}
+
+.dessert__footer__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 40%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .dessert__footer__left {
+    padding: 1rem 0;
+  }
+}
+
+.dessert__footer__left h2 {
+  color: rgba(20, 20, 20, 0.7);
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5rem;
+  padding: .5rem 2rem;
+}
+
+.dessert__footer__middle {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 60%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .dessert__footer__middle {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+
+.dessert__footer__middle ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: stretch;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .dessert__footer__middle ul {
+    justify-content: space-between;
+  }
+}
+
+.dessert__footer__item {
+  height: 100%;
+  list-style: none;
+  margin: 0 .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  transition: all .5s;
+}
+
+.dessert__footer__item a {
+  text-decoration: none;
+  color: rgba(56, 55, 55, 0.7);
+  text-transform: capitalize;
+  font-size: 1.7rem;
+}
+
+.dessert__footer__item:hover {
+  background-color: #383737;
+  transform: scaleX(1.1);
+}
+
+.dessert__footer__item:hover a {
+  color: #FCB941;
+}
+
+.dessert__footer__right {
+  flex: 0 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .dessert__footer__right {
+    padding: 1rem 0;
+  }
+}
+
+.dessert__footer__right h3 {
+  font-family: "Dancing Script", cursive;
+  color: rgba(56, 55, 55, 0.7);
+  padding: .5rem 1rem;
+  box-shadow: -0.9rem -0.9rem 0.9rem 0 rgba(212, 212, 212, 0.5), 0.9rem 0.9rem 0.9rem 0 rgba(52, 65, 70, 0.5);
+}
+
+.drinksBody ::selection {
+  background-color: #34ace0;
+  color: #fff;
+}
+
+.drinksWelcome {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(226, 224, 224, 0), rgba(226, 224, 224, 0)), url(../img/Bauturi/drinks-wallpaper-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .drinksWelcome {
+    height: 50vh;
+  }
+}
+
+.drinksWelcome__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.drinksWelcome__box {
+  flex: 0 1 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.99));
+}
+
+.drinksWelcome__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.9rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .drinksWelcome__text {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .drinksWelcome__text {
+    font-size: 1.7rem;
+  }
+}
+
+.drinksWelcome__text h1,
+.drinksWelcome__text h2 {
+  color: #34ace0;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1rem 2rem;
+  margin: 1rem;
+  box-shadow: -0.9rem -0.9rem 0.9rem 0 rgba(255, 255, 255, 0.25), 0.9rem 0.9rem 0.9rem rgba(0, 0, 0, 0.15);
+}
+
+.drinks {
+  width: 100%;
+  background-color: #FEEAB4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .drinks {
+    justify-content: space-evenly;
+  }
+}
+
+.drinks__box {
+  height: 45rem;
+  min-width: 30%;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.drinks__text {
+  text-align: center;
+  font-size: 3.2rem;
+  color: #34ace0;
+  font-family: "Dancing Script", cursive;
+}
+
+.drinks__picture {
+  height: 20rem;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+}
+
+.drinks__img {
+  display: block;
+  height: 100%;
+}
+
+.coca {
+  height: 50vh;
+  width: 100%;
+  background-color: #800000;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .coca {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.coca__picture {
+  height: 50vh;
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.coca__img {
+  display: block;
+  height: 100%;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .coca__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.coca__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-indent: 5rem;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .coca__text {
+    padding: 3rem 5rem;
+    text-indent: 0;
+  }
+}
+
+.coca__text h2 {
+  color: rgba(227, 222, 219, 0.99);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .coca__text h2 {
+    margin: 1rem 0;
+  }
+}
+
+.coca__text p {
+  color: rgba(212, 212, 212, 0.7);
+}
+
+.coffe {
+  height: 90vh;
+  background-image: url(../img/Bauturi/drink-coffe-c.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 75em) {
+  .coffe {
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 52.25em) {
+  .coffe {
+    height: 30vh;
+  }
+}
+
+.coffe__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .coffe__container {
+    align-items: flex-start;
+  }
+}
+
+.coffe__container h1 {
+  font-size: 4rem;
+  font-family: "Dancing Script", cursive;
+  color: #227093;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .coffe__container h1 {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 3px;
+  }
+}
+
+.coffe__container a:link,
+.coffe__container a:visited {
+  text-decoration: none;
+  padding: .6rem 2rem;
+  background-color: #fff;
+  color: #34ace0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  border-bottom: 3px solid #34ace0;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.25);
+  transition: all .3s ease;
+}
+
+.coffe__container a:hover {
+  transform: translateY(-5px);
+  color: #fff;
+  background-color: #34ace0;
+  border-bottom: 3px solid #34ace0;
+  box-shadow: 0 0.8rem 1.2rem 0 rgba(0, 0, 0, 0.55);
+}
+
+.coffe__container a:active {
+  transform: translateY(0);
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.coffeBody {
+  height: auto;
+  background-color: #FEEAB4;
+  padding: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.coffeBody__box {
+  height: 27rem;
+  width: 30rem;
+  margin: 5rem 5rem;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.coffeBody__picture {
+  height: 15rem;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 82%);
+}
+
+.coffeBody__img {
+  width: 100%;
+  display: block;
+}
+
+.coffeBody__text {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.coffeBody__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.coffeBody__left h5 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.coffeBody__left p {
+  font-size: 1.3rem;
+  color: rgba(56, 55, 55, 0.7);
+}
+
+.coffeBody__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.coffeBody__right p {
+  color: #e72121;
+  font-weight: 600;
+}
+
+.coffeBody__stars {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.coffeBody__icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: #FCB941;
+}
+
+.drinksFooter {
+  height: 15rem;
+  width: 100%;
+  background-color: #344146;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .drinksFooter {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.drinksFooter h2 {
+  color: #D4D4D4;
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+  color: #34ace0;
+}
+
+.drinksFooter__logo {
+  height: 10rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.drinksFooter__img {
+  height: 10rem;
+  display: block;
+}
+
+.drinksFooter__container {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgba(212, 212, 212, 0.8);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .drinksFooter__container {
+    margin: 3rem 0;
+  }
+}
+
+.drinksFooter__copyrights {
+  padding: 1rem 2rem;
+  background-color: #344146;
+  box-shadow: -0.3rem -0.3rem 0.9rem 0 rgba(255, 255, 255, 0.25), 0.4rem 0.6rem 0.9rem 0 rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .drinksFooter__copyrights {
+    margin: 3rem 0;
+  }
+}
+
+.drinksFooter__legal {
+  padding: 1rem 2rem;
+  background-color: #344146;
+  box-shadow: -0.3rem -0.3rem 0.9rem 0 rgba(255, 255, 255, 0.25), 0.4rem 0.6rem 0.9rem 0 rgba(0, 0, 0, 0.25);
+}
+/*# sourceMappingURL=main.css.map */
